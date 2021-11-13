@@ -16,6 +16,18 @@ Cypress.Commands.add("login", (email, password) => {
     // {enter} causes the form to submit
     cy.get('input[name=password]').type(`${password}{enter}`)
 })
+
+Cypress.Commands.add("input_keyboard", (key) => {
+    cy.get("#target").type(key);
+    cy.get("#result").should("contain", key)
+})
+
+Cypress.Commands.add("input_keyboard_special", (key) => {
+    cy.get("#target").type("{" + key + "}");
+    cy.get("#result").should("contain", key.match(/[A-Z][a-z]+|[0-9]+/g).join("_").toUpperCase())
+})
+
+
 //
 //
 // -- This is a child command --

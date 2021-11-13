@@ -3,6 +3,10 @@ describe("Add/Remove Elements Page", () => {
         cy.visit("add_remove_elements/");
     });
 
+    it('should be in the page', () => {
+        cy.url().should("contain","add_remove_elements")
+    });
+
     it('should add element', function () {
         cy.get('div[class=example]').find('button').click();
 
