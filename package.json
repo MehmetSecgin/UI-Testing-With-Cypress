@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "comment": "Use '\\' instead of '/' in Windows. Fixes the problem.",
-    "test": ".\\node_modules\\.bin\\cypress run"
+    "test": "./node_modules/.bin/cypress run"
   },
   "keywords": [],
   "author": "Oleg Pahhomov",
