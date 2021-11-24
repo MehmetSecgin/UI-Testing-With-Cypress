@@ -1,13 +1,3 @@
-## Team Name - Scar Mini_Team09
-
----
-
-## Team Members
-
-Mehmet Ali Seçgin , Fothul Karim Forhan
-
----
-
 # The Endpoints:
 
 ## We added 2 more endpoints to the ones that Mr. Oleg made:
